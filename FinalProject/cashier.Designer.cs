@@ -51,8 +51,8 @@
             this.passport_dbDataSet6 = new FinalProject.passport_dbDataSet6();
             this.applicantTableAdapter1 = new FinalProject.passport_dbDataSet6TableAdapters.ApplicantTableAdapter();
             this.btnViewUnpaidApplicants = new System.Windows.Forms.Button();
-            this.checkBoxMarkAsPaid = new System.Windows.Forms.CheckBox();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.lblIDNumber = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.applicantBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.passport_dbDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -62,9 +62,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(987, 32);
+            this.button1.Location = new System.Drawing.Point(658, 21);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 41);
+            this.button1.Size = new System.Drawing.Size(63, 27);
             this.button1.TabIndex = 0;
             this.button1.Text = "LogOut";
             this.button1.UseVisualStyleBackColor = true;
@@ -72,16 +73,18 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 32);
+            this.textBox1.Location = new System.Drawing.Point(15, 21);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 26);
+            this.textBox1.Size = new System.Drawing.Size(122, 20);
             this.textBox1.TabIndex = 1;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(286, 12);
+            this.button2.Location = new System.Drawing.Point(191, 8);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 41);
+            this.button2.Size = new System.Drawing.Size(63, 27);
             this.button2.TabIndex = 2;
             this.button2.Text = "search";
             this.button2.UseVisualStyleBackColor = true;
@@ -103,9 +106,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(22, 78);
+            this.button3.Location = new System.Drawing.Point(15, 51);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(181, 36);
+            this.button3.Size = new System.Drawing.Size(121, 23);
             this.button3.TabIndex = 4;
             this.button3.Text = "View All Applicant ";
             this.button3.UseVisualStyleBackColor = true;
@@ -127,12 +131,14 @@
             this.receiptnumberDataGridViewTextBoxColumn,
             this.appointmentdateDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.applicantBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(67, 217);
+            this.dataGridView1.Location = new System.Drawing.Point(45, 141);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(962, 319);
+            this.dataGridView1.Size = new System.Drawing.Size(641, 207);
             this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -231,47 +237,48 @@
             // 
             // btnViewUnpaidApplicants
             // 
-            this.btnViewUnpaidApplicants.Location = new System.Drawing.Point(240, 75);
+            this.btnViewUnpaidApplicants.Location = new System.Drawing.Point(160, 49);
+            this.btnViewUnpaidApplicants.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnViewUnpaidApplicants.Name = "btnViewUnpaidApplicants";
-            this.btnViewUnpaidApplicants.Size = new System.Drawing.Size(201, 39);
+            this.btnViewUnpaidApplicants.Size = new System.Drawing.Size(134, 25);
             this.btnViewUnpaidApplicants.TabIndex = 7;
             this.btnViewUnpaidApplicants.Text = "View Unpaid Applicants";
             this.btnViewUnpaidApplicants.UseVisualStyleBackColor = true;
             this.btnViewUnpaidApplicants.Click += new System.EventHandler(this.btnViewUnpaidApplicants_Click);
             // 
-            // checkBoxMarkAsPaid
-            // 
-            this.checkBoxMarkAsPaid.AutoSize = true;
-            this.checkBoxMarkAsPaid.Location = new System.Drawing.Point(662, 175);
-            this.checkBoxMarkAsPaid.Name = "checkBoxMarkAsPaid";
-            this.checkBoxMarkAsPaid.Size = new System.Drawing.Size(125, 24);
-            this.checkBoxMarkAsPaid.TabIndex = 8;
-            this.checkBoxMarkAsPaid.Text = "Mark as paid";
-            this.checkBoxMarkAsPaid.UseVisualStyleBackColor = true;
-            // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(815, 159);
+            this.btnSubmit.Location = new System.Drawing.Point(543, 103);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(98, 39);
+            this.btnSubmit.Size = new System.Drawing.Size(90, 25);
             this.btnSubmit.TabIndex = 9;
-            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.Text = "Mark as Paid";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // lblIDNumber
+            // 
+            this.lblIDNumber.AutoSize = true;
+            this.lblIDNumber.Location = new System.Drawing.Point(448, 103);
+            this.lblIDNumber.Name = "lblIDNumber";
+            this.lblIDNumber.Size = new System.Drawing.Size(0, 13);
+            this.lblIDNumber.TabIndex = 10;
+            // 
             // cashier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 590);
+            this.ClientSize = new System.Drawing.Size(736, 384);
+            this.Controls.Add(this.lblIDNumber);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.checkBoxMarkAsPaid);
             this.Controls.Add(this.btnViewUnpaidApplicants);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "cashier";
             this.Text = "cashier";
             this.Load += new System.EventHandler(this.cashier_Load);
@@ -309,7 +316,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn receiptnumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appointmentdateDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnViewUnpaidApplicants;
-        private System.Windows.Forms.CheckBox checkBoxMarkAsPaid;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lblIDNumber;
     }
 }
